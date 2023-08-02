@@ -1,6 +1,84 @@
-a{
-    color: black;
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+  /* GENERALE */
+  body {
+    background-color: #1F2039;
+    color:#1F2039;
 }
-p span {
+
+h1 {
+    font-size: 3.5em;
     color: #A5B4FC;
+    font-family: Montserrat;
+}
+p {
+    font-size: 1.1em;
+    font-family: Manrope;
+    
+}
+ul {
+    font-size: 1em;
+    font-family: Manrope;
+
+}
+p, ul, h2 {
+    color: #f9f8ff;
+    background-color: blue;
+}
+a, a img{
+    text-decoration: none;
+    color: #242424;
+    font-size: 1em;
+    font-family: Manrope;
+}
+div {
+    background-color: white;
+}
+a img:hover {
+    opacity: 0.5;
+}
+p em {
+    color: #A5B4FC; 
+}
+.cta {
+    background: linear-gradient(90deg, #8e86b5, #acaeed);
+    border-radius: 5Opx;
+}
+.main {
+    border-right: 1px;
+    border-bottom: 1px;
+    color: #8e86b5;
+}
+a:hover {
+    text-decoration: underline;
+}
+.cta:hover {
+    background: linear-gradient(#696484, #8788ba);
+    text-decoration: none;
+}
+/* HEADER */
+header {
+    background-color: white;
+}
+
+/* NAVIGATION */
+nav {
+
+}
+
+/* ASIDE */
+aside {
+
+}
+
+/* SECTION */
+section {
+
+}
+
+/* FOOTER */
+footer {
+    
 }
