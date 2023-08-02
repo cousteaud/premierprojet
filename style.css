@@ -12,18 +12,20 @@ h1 {
     font-size: 3.5em;
     color: #A5B4FC;
     font-family: Montserrat;
+    text-align: center;
 }
 p {
     font-size: 1.1em;
     font-family: Manrope;
-    
+    margin: auto;
+    color: #A5B4FC;
 }
 ul {
     font-size: 1em;
     font-family: Manrope;
 
 }
-p, ul, h2 {
+ {
     color: #f9f8ff;
     background-color: blue;
 }
@@ -33,23 +35,30 @@ a, a img{
     font-size: 1em;
     font-family: Manrope;
 }
-div {
-    background-color: white;
-}
-a img:hover {
+img:hover {
     opacity: 0.5;
 }
-p em {
+em {
     color: #A5B4FC; 
+    font-style: normal;
 }
 .cta {
     background: linear-gradient(90deg, #8e86b5, #acaeed);
     border-radius: 5Opx;
+    padding: 2Opx 30ox;
+    color: white;
 }
-.main {
+.carre-contenu {
     border-right: 1px;
     border-bottom: 1px;
     color: #8e86b5;
+    padding: 50px;
+}
+.carre-contenu h2 {
+margin-top: 3Opx;
+}
+.carre-contenu ul {
+    margin-top: 30px;
 }
 a:hover {
     text-decoration: underline;
@@ -58,9 +67,31 @@ a:hover {
     background: linear-gradient(#696484, #8788ba);
     text-decoration: none;
 }
+.a-propos-main
+ {
+    margin: auto;
+    width: 50%;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a {
+    margin-left: 30px;
+}
+.Accueil-introduction{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    align-items: center;
+    margin: auto;
+}
 /* HEADER */
 header {
     background-color: white;
+    padding: 20px 50px;
 }
 
 /* NAVIGATION */
@@ -75,10 +106,15 @@ aside {
 
 /* SECTION */
 section {
-
+padding: 80px;
 }
 
 /* FOOTER */
 footer {
+    background-color: white;
+    padding: 20px 50px;
+      }
+    footer img:hover {
+        opacity: 0.5;
     
 }
