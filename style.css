@@ -20,11 +20,7 @@ p {
     margin: auto;
     color: #A5B4FC;
 }
-ul {
-    font-size: 1em;
-    font-family: Manrope;
 
-}
  {
     color: #f9f8ff;
     background-color: blue;
@@ -48,7 +44,7 @@ em {
     padding: 2Opx 30ox;
     color: white;
 }
-.carre-contenu {
+.cousteaud {
     border-right: 1px;
     border-bottom: 1px;
     color: #8e86b5;
@@ -67,7 +63,7 @@ a:hover {
     background: linear-gradient(#696484, #8788ba);
     text-decoration: none;
 }
-.a-propos-main
+.cagnotte
  {
     margin: auto;
     width: 50%;
@@ -81,12 +77,16 @@ nav {
 nav a {
     margin-left: 30px;
 }
-.Accueil-introduction{
+.presentation{
     display: flex;
     flex-direction: row;
     width: 50px;
     align-items: center;
     margin: auto;
+}
+.photos {
+    background-color: white;
+    padding: 80px;
 }
 /* HEADER */
 header {
