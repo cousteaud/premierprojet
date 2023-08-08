@@ -7,6 +7,9 @@
     background-color: #1F2039;
     color:#1F2039;
 }
+*{
+    margin: 0;
+}
 
 h1 {
     font-size: 3.5em;
@@ -15,15 +18,19 @@ h1 {
     text-align: center;
 }
 p {
-    font-size: 1.1em;
     font-family: Manrope;
     margin: auto;
-    color: #A5B4FC;
-}
 
- {
+}
+h2 {
     color: #f9f8ff;
-    background-color: blue;
+    font-size: 2em;
+    margin: 30px;
+}
+p,
+li {
+  font-size: 1.2em;
+  color: #f9f8ff;
 }
 a, a img{
     text-decoration: none;
@@ -39,10 +46,15 @@ em {
     font-style: normal;
 }
 .cta {
+    display: inline-block;
     background: linear-gradient(90deg, #8e86b5, #acaeed);
     border-radius: 5Opx;
-    padding: 2Opx 30ox;
+    padding: 20px 30px;
     color: white;
+    border: 50px  50px;
+    border-radius: 40px;
+    
+
 }
 .cousteaud {
     border-right: 1px;
@@ -56,6 +68,9 @@ margin-top: 3Opx;
 .carre-contenu ul {
     margin-top: 30px;
 }
+.carre-contenu + div {
+    text-align: center;
+  }
 a:hover {
     text-decoration: underline;
 }
@@ -63,6 +78,14 @@ a:hover {
     background: linear-gradient(#696484, #8788ba);
     text-decoration: none;
 }
+.lien-icone {
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  .lien-icone:hover {
+    opacity: 0.5;
+  }
 .cagnotte
  {
     margin: auto;
@@ -77,6 +100,22 @@ nav {
 nav a {
     margin-left: 30px;
 }
+.photos h2 {
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  h2 {
+    margin: 40px;
+  }
+.photos div
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
 .presentation{
     display: flex;
     flex-direction: row;
@@ -87,7 +126,25 @@ nav a {
 .photos {
     background-color: white;
     padding: 80px;
+    margin-bottom: 80px;
+    color: #242424;
+    position: relative;
 }
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+  
 /* HEADER */
 header {
     background-color: white;
@@ -95,26 +152,102 @@ header {
 }
 
 /* NAVIGATION */
-nav {
-
-}
 
 /* ASIDE */
-aside {
-
-}
 
 /* SECTION */
 section {
-padding: 80px;
+
+    padding: 80px;  
 }
+.portfolio
+{
+    background-color: white;
+}
+.portfolio h2
+{
+    color: #242424;
+  margin-bottom: 80px;
+}
+.paysages
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+
+
+}
+.portraits
+{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 15px;
+}
+.paysages img,
+.portraits img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.paysages div:hover img {
+    opacity: 0.5;
+    }
+    .paysages div:hover {
+        background-color: black;
+        }
+        .paysages div button {
+            display: flex;
+            position: absolute;
+            margin-top: -150px;
+            margin-left : 150px;
+            background-color: transparent;
+            text-transform: uppercase;
+            opacity: 0;
+            border:none;
+            color: white;
+        }
+        .paysages div:hover button {
+            opacity: 1;
+        }
+        .portraits div:hover img {
+            opacity: 0.5;
+            }
+
+.portraits div:hover {
+        background-color: black;
+        }
+            .portraits div button {
+                display: flex;
+                position: absolute;
+                margin-top: -150px;
+                margin-left : 150px;
+                background-color: transparent;
+                text-transform: uppercase;
+                opacity: 0;
+                border:none;
+                color: white;
+            }
+            .portraits div:hover button {
+                opacity: 1;
+
 
 /* FOOTER */
 footer {
-    background-color: white;
+    background-color:white;
     padding: 20px 50px;
       }
-    footer img:hover {
+    footer img:hover 
+    {
         opacity: 0.5;
-    
-}
+    }
+    footer div 
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;        
+    }
+   }
+   
