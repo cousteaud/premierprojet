@@ -250,4 +250,21 @@ footer {
         justify-content: space-between;        
     }
    }
-   
+   .table {
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+   }
+   td {
+    border: 1px solid black;
+    padding: 20px;
+
+   }
+   h4 {
+    margin-bottom: 30px;
+    text-align: center;
+   }
+   table {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+   }
